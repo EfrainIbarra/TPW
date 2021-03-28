@@ -1,6 +1,6 @@
 body{
     background-color: #000;
-    background-image: url(../img/BG1.jpg);
+    background-image: url(../images/BG1.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body::after{
 @media only screen and (max-width: 767px){
     body{
     background-color: #000;
-    background-image: url(../img/Bg2.jpg);
+    background-image: url(../images/Bg2.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
