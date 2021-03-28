@@ -1,0 +1,85 @@
+body{
+    background-color: #000;
+    background-image: url(../img/BG1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 767px){
+    body{
+    background-color: #000;
+    background-image: url(../img/Bg2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+}
+
+embed{
+    float: left;
+    position: relative;
+    left: 40%;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    position: relative;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: solid 1px;
+    padding: 3px;
+}
+
+.lvl2{
+    background-color: green;
+}
+
+.lvl1{
+    background-color: red;
+
+}
+
+.lvl0{
+    background-color: gray;
+}
+
+p{
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#img1{
+    position: relative;
+    float: left;
+    width: 100px;
+    left: 270px;
+}
+
+#img2{
+    position: relative;
+    float: left;
+    width: 160px;
+    left: 30%;
+    bottom: 5px;
+}
