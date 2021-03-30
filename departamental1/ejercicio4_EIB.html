@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles4.css" />
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <form method="post" action="./assets/pag.php">
+        <fieldset>
+            <legend>Awa awa</legend>
+
+            <table>
+                <tr>
+                    <td><label for="name">Nombre:</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="ontas">Ontas?</label></td>
+                    <td><input type="text" id="ontas" name="ontas"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Genero de anime preferido:</label></td>
+                    <td>
+                        <select id="anime" name="anime">
+                            <option value="1"></option>
+                            <option value="2">Shojo</option>
+                            <option value="3">Shonen</option>
+                            <option value="4">Gore</option>
+                            <option value="5">Ficcion</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <table id="color">
+                        <tr><legend>Elija un color</legend></tr>
+                        <tr>
+                            <td>
+                                <label><input type="radio" name="color" value="azul"> Azul</label>
+                            </td>
+                            <td>
+                                <label><input type="radio" name="color" value="negro"> Negro</label>
+                            </td>
+                            <td>
+                                <label><input type="radio" name="color" value="amarillo"> Amarillo</label>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+
+                <tr>
+                    <input type="submit" value="Awa awa" id="boton"/>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
