@@ -1,0 +1,40 @@
+.container{
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+h2{
+    color: rgb(94, 148, 41);
+}
+
+#volver{
+    position: relative;
+    float: left;
+    top: 10px;
+    left: 20px;
+    background-color: grey;
+}
+
+a{
+    color: white;
+}
+
+#a1, #a2, ul{
+    font-size: 13.5px;
+}
+
+ table,tr,td{
+    border-collapse: separate;
+    border: black 1px solid;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img{
+    width: 150px;
+}

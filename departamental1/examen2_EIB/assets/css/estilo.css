@@ -1,0 +1,42 @@
+fieldset{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.l{
+    text-align: right;
+}
+
+#aaa, #aaaa{
+    width: 100%;
+}
+
+#aaaa{
+    border: 1px solid;
+}
+
+.awa{
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table{
+  
+}
+
+#volver{
+    position: relative;
+    float: left;
+    top: 10px;
+    left: 20px;
+    background-color: grey;
+}
+
+a{
+    color: white;
+}

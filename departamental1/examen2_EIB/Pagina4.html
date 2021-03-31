@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="volver">
+        <th><a href="./examen2_EIB.html">Volver</a></th>
+    </table>
+
+    <div class="awa">
+        <table id="aaaa">
+            <tr>
+                <th colspan="4">
+                    <h3>CATÁLOGO DE ARTE</h3>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2" style="text-align: left;">Introduce los términos de búsqueda:</th>
+            </tr>
+            <main>
+                <form action="#" method="POST">
+                    <tr>
+                        <th>
+                            <table id="aaa">
+                                <tr>
+                                    <th>
+                                        <h3>OBRA</h3>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Titulo <input type="text" name="title" id="title"></td>
+                                </tr>
+                                <tr>
+                                    <td>Autor <input type="text" name="author" id="author"></td>
+                                </tr>
+                            </table>
+                        </th>
+
+                        <th>
+                            <table id="aaa">
+                                <tr>
+                                    <th>
+                                        <h3>TIPO</h3>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="typ">Escultura</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="typ">Arquitectura</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="typ">Pintura</td>
+                                </tr>
+                            </table>
+                        </th>
+
+                        <th>
+                            <table id="aaa">
+                                <tr>
+                                    <th>
+                                        <h3>DISPONIBILIDAD</h3>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="ds" id="ds" value="1">Museo/Acceso publico</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="ds" id="ds" value="2">Coleccion privada</td>
+                                </tr>
+                            </table>
+                        </th>
+                        <th>
+                            <table id="aaa">
+                                <tr>
+                                    <th>
+                                        <h3>ESTILO</h3>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="sty" id="sty">
+                                            <option value="1">Clasico</option>
+                                            <option value="2">Renacentista</option>
+                                            <option value="3">Gótico</option>
+                                            <option value="4">Abstracto</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th style="text-align: right;">Haganos saber sus sugerencias:</th>
+                        <td><textarea name="texto" rows="4" cols="40"
+                                placeholder="Me gustaría indicar que..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Buscar"></td>
+                    </tr>
+                </form>
+            </main>
+        </table>
+    </div>
+</body>
+
+</html>
