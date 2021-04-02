@@ -10,6 +10,12 @@ body{
     font-weight: bold;
 }
 
+@media only screen and (max-width: 600px){
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(../images/bgm1_2.gif);
+    }
+}
+
 table{
     background-color: black;
     margin-left: auto;
@@ -33,4 +39,9 @@ th, td{
 
 a{
     color: red;
+}
+
+audio{
+    position: relative;
+    top: 30px;
 }
