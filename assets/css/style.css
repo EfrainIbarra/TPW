@@ -13,7 +13,7 @@ body{
 
 @media only screen and (max-width: 600px){
     body{
-        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(../images/bgm1_2.gif);
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(../images/Bgm1_2.gif);
     }
 }
 
