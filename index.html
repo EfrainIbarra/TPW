@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Departamentales</title>
 </head>
+
 <body>
+
     <header>
-        <audio  autoplay loop controls style="width: 300px;">
-            <source src="./assets/music/KHCH.ogg" type="audio/ogg"></source>
-            <source src="./assets/music/KHCH.mp3" type="audio/mpeg"></audio></source>
+        <audio autoplay loop id="player">
+            <source src="./assets/music/KHCH.ogg" type="audio/ogg">
+            </source>
+            <source src="./assets/music/KHCH.mp3" type="audio/mpeg">
+        </audio></source>
         </audio>
+        <div>
+            <button onclick="document.getElementById('player').play()" class="boton">Play</button>
+            <button onclick="document.getElementById('player').pause()" class="boton">Pausa</button>
+            <br>
+            <label for="volumen">Volumen</label>
+            <input type="range" id="awa" name="volumen" max="1" min="0" value="1" step="0.1">
+        </div>
     </header>
+
     <div>
         <table>
             <tr>
@@ -27,5 +40,15 @@
             </tr>
         </table>
     </div>
+
+    <script>
+            const a = document.getElementById("awa");
+            a.addEventListener('input', (e) =>{
+                const b = e.srcElement.value;
+                var audio = document.getElementById("player");
+            audio.volume = b;
+            }); 
+    </script>
 </body>
+
 </html>
