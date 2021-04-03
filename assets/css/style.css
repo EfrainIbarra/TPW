@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(../images/Bgm1.gif);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(../images/bgm1.gif);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -8,6 +8,7 @@ body{
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    color: rgb(197, 197, 197);
 }
 
 @media only screen and (max-width: 600px){
@@ -44,3 +45,41 @@ audio{
     position: relative;
     top: 30px;
 }
+
+.boton{
+    appearance: none;
+    background-color: rgba(152, 82, 243, 0.377);
+    color: white;
+    outline: none;
+    padding: 3px;
+}
+
+#awa{
+  -webkit-appearance: none;
+  appearance: none;
+  background: #969595;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#awa:hover{
+    opacity: 1;
+}
+
+#awa::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 17px; 
+    height: 17px;
+    background: #4c56af; 
+    cursor: pointer;
+  }
+
+  #awa::-moz-range-thumb {
+    width: 17px;
+    height: 17px; 
+    background: #4c56af;
+    cursor: pointer;
+  }
