@@ -26,6 +26,28 @@ table{
     opacity: .60;
 }
 
+@media only screen and (max-width: 700px){
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(../images/Bg_2.png);
+        text-align: center;
+    }
+    table{
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+    left: 30px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    padding: 3px;
+    z-index: 1;
+    filter: alpha(opacity=70);
+    -moz-opacity:.70;
+    opacity: .70;
+}
+}
+
 th, td{
     border: solid 1px;
     padding: 3px;
