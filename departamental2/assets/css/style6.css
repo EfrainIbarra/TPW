@@ -1,0 +1,32 @@
+.calculadora{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.calculadora td button{
+    display: block;
+    width: 80px;
+    border-collapse: separate;
+}
+
+.pantalla{
+    float: right;
+    text-align: right;
+    width: 440px;
+    height: 35px;
+    border-radius: 4px;
+    line-height: 40px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+tr, td{
+    border: 5px solid white;
+    text-align: center;
+}
