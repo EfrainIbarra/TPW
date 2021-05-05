@@ -83,3 +83,10 @@ audio{
     background: #4c56af;
     cursor: pointer;
   }
+
+  #volver{
+    position: absolute;
+    float: left;
+    top: 10px;
+    left: 20px;
+}
