@@ -31,7 +31,7 @@ img{
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
-    grid-auto-rows: 260px;
+    grid-auto-rows: 290px;
     grid-gap: 2rem;
 }
 
