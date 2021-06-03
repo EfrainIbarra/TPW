@@ -30,6 +30,14 @@
     <!-- bootstrap-daterangepicker -->
     <link href="../../plantilla/Gentelella/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
+    <!--Data tables-->
+    <link rel="stylesheet" href="../../plantilla/Gentelella/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css">   
+    <link href="../../plantilla/Gentelella/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../../plantilla/Gentelella/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../../plantilla/Gentelella/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../../plantilla/Gentelella/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+
     <!-- Custom Theme Style -->
     <link href="../../plantilla/Gentelella/build/css/custom.min.css" rel="stylesheet">
 </head>
@@ -120,76 +128,8 @@
                                                     <th>Acciones</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-
-                                                <tr>
-                                                    <td>Curso de Android</td>
-                                                    <td>23-12-2020</td>
-                                                    <td>20</td>
-                                                    <td>
-                                                        <a class="btn btn-info btn-sm" data-toggle="modal"
-                                                            data-target="#modal-Actualizar" href="#">
-                                                            <i class="fa fa-pencil">
-                                                            </i>
-                                                            Editar
-                                                        </a>
-                                                        <a class="btn btn-danger btn-sm" data-toggle="modal"
-                                                            data-target="#modal-default" href="#">
-                                                            <i class="fa fa-trash">
-                                                            </i>
-                                                            Eliminar
-                                                        </a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Curso de React</td>
-                                                    <td>30-04-2021</td>
-                                                    <td>20</td>
-                                                    <td>
-                                                        <a class="btn btn-info btn-sm" data-toggle="modal"
-                                                            data-target="#modal-Actualizar" href="#">
-                                                            <i class="fa fa-pencil">
-                                                            </i>
-                                                            Editar
-                                                        </a>
-                                                        <a class="btn btn-danger btn-sm" data-toggle="modal"
-                                                            data-target="#modal-default" href="#">
-                                                            <i class="fa fa-trash">
-                                                            </i>
-                                                            Eliminar
-                                                        </a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Curso de Flutter</td>
-                                                    <td>16-09-2020</td>
-                                                    <td>30</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-success"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="La constancia es valida">
-                                                            Validada
-                                                        </button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Curso de React Native</td>
-                                                    <td>13-12-2019</td>
-                                                    <td>25</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-danger"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="La constancia no especifica horas">
-                                                            Rechazada
-                                                        </button>
-                                                    </td>
-                                                </tr>
-
-                                            </tbody>
-                                            <tfoot>
+                                            
+                                        <tfoot>
                                             </tfoot>
                                         </table>
                                         <!-- /.Nueva Constancia -->
@@ -210,7 +150,7 @@
                                                             <div class="col-12">
                                                                 <div class="form-group">
                                                                     <label>Nombre de la actividad</label>
-                                                                    <input type="text" class="form-control" id=""
+                                                                    <input type="text" class="form-control" id="actividad"
                                                                         placeholder="Digite nombre de la actividad">
                                                                 </div>
                                                             </div>
@@ -219,7 +159,7 @@
                                                             <div class="col-6">
                                                                 <div class="form-group">
                                                                     <label>Fecha de inicio</label>
-                                                                    <div class="input-group date" id="reservationdate2"
+                                                                    <div class="input-group date" id="Fecha_inicio"
                                                                         data-target-input="nearest">
                                                                         <input type="text"
                                                                             class="form-control datetimepicker-input"
@@ -237,7 +177,7 @@
                                                             <div class="col-6">
                                                                 <div class="form-group">
                                                                     <label>Fecha de termino</label>
-                                                                    <div class="input-group date" id="reservationdate"
+                                                                    <div class="input-group date" id="fecha_fin"
                                                                         data-target-input="nearest">
                                                                         <input type="text"
                                                                             class="form-control datetimepicker-input"
@@ -255,7 +195,7 @@
                                                             <div class="col-3">
                                                                 <div class="form-group">
                                                                     <label>Horas</label>
-                                                                    <input type="number" class="form-control" id=""
+                                                                    <input type="number" class="form-control" id="horas"
                                                                         value="16">
                                                                 </div>
                                                             </div>
@@ -268,7 +208,7 @@
                                                             <div class="input-group">
                                                                 <div class="custom-file">
                                                                     <input type="file" class="custom-file-input"
-                                                                        id="exampleInputFile">
+                                                                        id="archivo">
                                                                     <label class="custom-file-label"
                                                                         for="exampleInputFile">constancias1.pdf</label>
                                                                 </div>
@@ -283,7 +223,7 @@
                                                                 <div class="form-group">
                                                                     <div class="form-group">
                                                                         <label>Observaciones</label>
-                                                                        <textarea class="form-control" rows="3"
+                                                                        <textarea class="form-control" rows="3" id="observaciones"
                                                                             placeholder="Observe las observaciones que considere necesarias"></textarea>
                                                                     </div>
                                                                 </div>
@@ -323,7 +263,7 @@
                                                             data-dismiss="modal">
                                                             Cerrar
                                                         </button>
-                                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                                        <button type="button" class="btn btn-danger" onclick="actionDelete();">Eliminar</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -496,9 +436,39 @@
     <script src="../../plantilla/Gentelella/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
     <!-- starrr -->
     <script src="../../plantilla/Gentelella/vendors/starrr/dist/starrr.js"></script>
+    <!-- Datatables -->
+    <script src="../../plantilla/Gentelella/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../../plantilla/Gentelella/vendors/pdfmake/build/vfs_fonts.js"></script>
+
     <!-- Custom Theme Scripts -->
     <script src="../../plantilla/Gentelella/build/js/custom.min.js"></script>
 
+    <script src="./assets/js/crud-denominacion.js"></script>
+
+    <script>
+        $(function () {
+            $('#example1').DataTable()
+            
+        });
+
+        $( document ).ready(function(){
+            actionRead();
+        });
+    </script>
+    
 </body>
 
 </html>
