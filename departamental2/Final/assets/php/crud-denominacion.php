@@ -27,6 +27,35 @@
             # code...
             break;
     }
+
+    function accionCrear($conexion) {
+        if (!isset($_GET['actividad']) || !isset($_GET['fecha_inicio']) || !isset($_GET['fecha_fin']) || !isset($_GET['horas']) || !isset($_GET['archivo']) || !isset($_GET['observaciones'])) {
+      
+              $arr = array('error' => 1);
+      
+              echo json_encode($arr);
+              return;
+        }
+      
+        $activity = $_GET['actividad'];
+        $start_date = $_GET['fecha_inicio'];
+        $end_date = $_GET['fecha_fin'];
+        $hours = $_GET['horas'];
+        $archive = $_GET['archivo'];
+        $observations = $_GET['observaciones'];
+      
+        $query1 = "INSERT INTO constancia (actividad, fecha_inicio, fecha_fin, horas, archivo, observaciones) VALUE ('$activity', '$start_date', '$end_date', $hours, '$archive', '$observations');";
+      
+        if ($conexion->query($query1) === TRUE) {
+          $arr = array('error' => 0);
+      
+          echo json_encode($arr);
+        } else {
+          $arr = array('error' => 2);
+      
+          echo json_encode($arr);
+        }
+    }
     
     function accionLeer($conexion){
         $respuesta = array();
@@ -104,5 +133,31 @@
         echo json_encode($respuesta);
         mysqli_close($conexion);
     }
+    
+    function accionActualizar($conexion){
+        $respuesta = array();
 
+        $id            = $_POST['id'];
+        $actividad     = $_POST['actividad'];
+        $horas         = $_POST['horas'];
+        $archivo       = $_POST['archivo'];
+        $observaciones = $_POST['observaciones'];
+
+        $Query = " UPDATE constancia ";
+        $Query = $Query." SET actividad = '".$actividad."', horas = ".$horas.", archivo = '".$archivo."', observaciones = '".$observaciones."' ";
+        $Query = $Query." WHERE id = ".$id;
+
+        $resultado = mysqli_query($conexion,$Query);
+        $numero = mysqli_affected_rows($conexion);
+
+        if($numero >= 1){
+            $respuesta["estado"] = 1;
+            $respuesta["mensaje"] = "El registro se actualizo correctamente";
+        }else{
+            $respuesta["estado"] = 0;
+            $respuesta["mensaje"] = mysqli_error($conexion);
+        }
+        echo json_encode($respuesta);
+        mysqli_close($conexion);
+    }
 ?>
